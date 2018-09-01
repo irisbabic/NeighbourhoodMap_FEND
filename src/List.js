@@ -52,7 +52,7 @@ class List extends React.Component {
         return <ul aria-label="List of places">
                 {
                     showingNames.map((marker, index) =>
-                        <a href="#" key={marker.title} id={marker.title} onClick={this.openInfo.bind(this)} role="Listitem">{marker.title}</a>
+                       <li key={marker.title}><a href="#" id={marker.title} onClick={this.openInfo.bind(this)} role="Listitem">{marker.title}</a></li>
                     )
                 }
         </ul>
